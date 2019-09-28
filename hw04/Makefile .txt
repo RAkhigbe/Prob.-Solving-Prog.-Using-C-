@@ -1,0 +1,7 @@
+all: part4
+
+main.o: main.cpp
+	g++ -c -Werror -Wall main.cpp
+	
+part4: main.o
+	g++ -o part4 main.o
